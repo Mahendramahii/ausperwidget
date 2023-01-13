@@ -5,8 +5,8 @@ link  = document.createElement('link');
 link.rel  = 'stylesheet';
 link.type = 'text/css';
 //link.href = 'pcwidget2.css';
-link.href = 'https://cdn.jsdelivr.net/gh/Mahendramahii/ausperwidget/ausper.css'
-//link.href = 'https://raw.githack.com/Mahendramahii/ausperwidget/main/ausper.css'
+//link.href = 'https://cdn.jsdelivr.net/gh/Mahendramahii/ausperwidget/ausper.css'
+link.href = 'https://raw.githack.com/Mahendramahii/ausperwidget/main/ausper.css'
 link.media = 'all';
 head.appendChild(link);
 
