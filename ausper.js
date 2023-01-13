@@ -5,8 +5,8 @@ link  = document.createElement('link');
 link.rel  = 'stylesheet';
 link.type = 'text/css';
 //link.href = 'pcwidget2.css';
-//link.href = 'https://cdn.jsdelivr.net/gh/Mahendramahii/ausperwidget/ausper.css'
-link.href = 'https://raw.githack.com/Mahendramahii/ausperwidget/main/ausper.css'
+link.href = 'https://cdn.jsdelivr.net/gh/Mahendramahii/ausperwidget/ausper.css'
+//link.href = 'https://raw.githack.com/Mahendramahii/ausperwidget/main/ausper.css'
 link.media = 'all';
 head.appendChild(link);
 
@@ -56,7 +56,7 @@ async function userAction(val){
             for(let j=0;j<widgets[val].widgetdetails[i].length;j++){
                  let seconddivdata=`<div>
                                         <div style="height:200px;margin-top:15px;">
-                                            <img src=${widgets[val].widgetdetails[i][j].media[0].media_src} alt="No Image" style="height:100%;width:100%;object-fit:contain;">
+                                            <img src=${widgets[val].widgetdetails[i][j].media[0].media_src?widgets[val].widgetdetails[i][j].media[0].media_src:'https://i.ibb.co/GsPGN27/default-image.jpg'} alt="No Image" style="height:100%;width:100%;object-fit:contain;">
                                         </div>
                                         <div style="margin-top:15px;">
                                             <div style="font-size:16px;padding-bottom:10px;color:red;padding:0px 10%;">${widgets[val].widgetdetails[i][j].name}</div>
